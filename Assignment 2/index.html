@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartWave Mobiles | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS (only for heading + links demo) -->
+  <style>
+    h2.section-title {
+      border-left: 4px solid #1d4ed8;
+      padding-left: 8px;
+    }
+
+    a.text-link {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+
+    a.text-link:hover {
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with horizontal menu -->
+  <header id="home">
+    <div class="logo">
+      <a href="#home">
+        <img src="media/Logo.png" alt="SmartWave Mobiles Logo">
+      </a>
+      <h1>SmartWave Mobiles</h1>
+    </div>
+
+    <!-- Horizontal nav menu -->
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#products">Phones</a>
+      <a href="#features">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- SmartWave Today banner (instead of iframe) -->
+  <div class="frame-wrapper">
+    <div class="info-card">
+      <div class="info-card-header">
+        <span class="info-dot"></span>
+        <h2>SmartWave Today</h2>
+      </div>
+
+      <div class="info-card-content">
+        <div class="info-column">
+          <h3>Store Updates</h3>
+          <ul>
+            <li>New Redmi and Samsung 5G arrivals this week.</li>
+            <li>Extra ₹500 off for college students with ID card.</li>
+            <li>Free tempered glass with every iPhone purchase.</li>
+          </ul>
+        </div>
+
+        <div class="info-column">
+          <h3>Quick Offers</h3>
+          <ul>
+            <li>Exchange bonus on selected 4G to 5G upgrades.</li>
+            <li>No‑cost EMI available on major bank cards.</li>
+            <li>On-the-spot setup for WhatsApp and backups.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- page container START -->
+    <div class="page-container">
+
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Latest 5G Smartphones at Student-Friendly Prices</h2>
+          <p>Welcome to SmartWave Mobiles. We specialize in Redmi, Samsung and iPhone devices with honest recommendations for students and professionals.</p>
+          <ul>
+            <li>Free screen protector on every device</li>
+            <li>1-year store warranty on top of brand warranty</li>
+            <li>Exchange offers on selected models</li>
+          </ul>
+
+          <!-- Inline CSS only for this hero button -->
+          <button style="margin-top:12px;padding:8px 16px;border:none;border-radius:6px;
+                         background:#facc15;color:#111;font-weight:600;cursor:pointer;">
+            View Today’s Deals
+          </button>
+        </div>
+
+        <div class="hero-media">
+          <img src="media/hero_mobile.jpg" alt="Featured smartphone"
+               style="max-width:320px;border-radius:12px;border:3px solid #facc15;">
+        </div>
+      </section>
+
+      <!-- Phone cards section -->
+      <section id="products">
+        <h2 class="section-title">Popular Phones</h2>
+
+        <div class="card-grid">
+          <!-- Redmi card -->
+          <article class="phone-card">
+            <img src="media/Redmi.jpg" alt="Redmi Phone">
+            <h3>Redmi Note Series</h3>
+            <p>Best value for money with strong battery and gaming performance.</p>
+            <ul>
+              <li>6.5" display</li>
+              <li>Up to 8GB RAM</li>
+              <li>Fast charging</li>
+            </ul>
+          </article>
+
+          <!-- Samsung card -->
+          <article class="phone-card">
+            <img src="media/Samsung.jpg" alt="Samsung Phone">
+            <h3>Samsung Galaxy Series</h3>
+            <p>Bright AMOLED displays with reliable cameras and OneUI experience.</p>
+            <ul>
+              <li>AMOLED screen</li>
+              <li>Great camera</li>
+              <li>Knox security</li>
+            </ul>
+          </article>
+
+          <!-- iPhone card -->
+          <article class="phone-card">
+            <img src="media/Iphone.jpg" alt="Apple iPhone">
+            <h3>Apple iPhone</h3>
+            <p>Smooth performance, long software support and strong ecosystem.</p>
+            <ul>
+              <li>iOS updates</li>
+              <li>Powerful chip</li>
+              <li>High‑quality camera</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Table section below cards -->
+      <h2 class="section-title">Sample Price Table</h2>
+      <table class="products-table">
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Approx. Price (₹)</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Redmi</td>
+            <td>Redmi Note 13</td>
+            <td>15,999</td>
+            <td>Mid-range</td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>Galaxy A35</td>
+            <td>26,999</td>
+            <td>Upper mid-range</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>iPhone 15</td>
+            <td>79,900</td>
+            <td>Premium</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Calculator Section -->
+      <section class="calculator-section" id="calculator">
+        <h2 class="section-title">Smart Calculator</h2>
+        <p>Use our quick tool for your budget calculations.</p>
+        <div class="calculator-box">
+          <div class="input-group">
+            <label for="num1">First Number:</label>
+            <input type="text" id="num1" placeholder="Enter first number">
+          </div>
+          <div class="input-group">
+            <label for="num2">Second Number:</label>
+            <input type="text" id="num2" placeholder="Enter second number">
+          </div>
+          <div class="input-group">
+            <label for="result">Result:</label>
+            <input type="text" id="result" readonly>
+          </div>
+          <div class="calc-buttons">
+            <button onclick="calculate('+')">Add (+)</button>
+            <button onclick="calculate('-')">Sub (-)</button>
+            <button onclick="calculate('*')">Mul (*)</button>
+            <button onclick="calculate('/')">Div (/)</button>
+            <button onclick="calculateSquare()">Square (x²)</button>
+            <button onclick="customPromptCalc()">Custom (Prompt)</button>
+            <button onclick="clearCalc()" style="background:#ef4444;">Clear</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features / About section -->
+      <section class="features" id="features">
+        <h3>Why SmartWave Mobiles?</h3>
+        <p>We are a local mobile store focused on practical advice instead of confusing technical jargon.</p>
+        <ul>
+          <li>We listen to your actual usage (gaming, photography, study, etc.).</li>
+          <li>We explain pros and cons in simple language before you buy.</li>
+          <li>We help you set up backups, WhatsApp, and basic security on the spot.</li>
+        </ul>
+      </section>
+
+      <!-- Services section -->
+      <section class="features" id="services">
+        <h3>Services we offer</h3>
+        <ul>
+          <li>New phone sales and accessories (cases, chargers, earphones).</li>
+          <li>Basic repairs like screen guard installation and cover fitting.</li>
+          <li>Data transfer from old phone to new one.</li>
+        </ul>
+      </section>
+
+      <!-- Contact / Enquiry form -->
+      <section class="contact" id="contact">
+        <h2 class="section-title">Book a Callback</h2>
+        <p class="contact-intro">
+          Fill this form and our team will call you back with the best options for your budget.
+        </p>
+
+        <form action="#" method="post">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div>
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile" required>
+          </div>
+
+          <div>
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+
+          <div>
+            <label for="budget">Approx. Budget</label>
+            <select id="budget" name="budget">
+              <option value="under10">Under ₹10,000</option>
+              <option value="10to20">₹10,000 – ₹20,000</option>
+              <option value="20to35">₹20,000 – ₹35,000</option>
+              <option value="35plus">Above ₹35,000</option>
+            </select>
+          </div>
+
+          <textarea name="message" id="message"
+            placeholder="Describe what you are looking for (gaming, camera, battery, etc.)"></textarea>
+
+          <button type="submit" class="submit-btn">Submit Enquiry</button>
+        </form>
+      </section>
+
+    </div>
+    <!-- page container END -->
+  </main>
+
+  <footer>
+    © 2026 SmartWave Mobiles, Shirdi. All rights reserved.
+  </footer>
+
+  <script>
+    // --- Calculator Logic ---
+    function calculate(operator) {
+      const n1 = document.getElementById('num1').value;
+      const n2 = document.getElementById('num2').value;
+      
+      // Basic validation
+      if (n1 === "" || n2 === "") {
+        alert("Please enter both numbers for this operation!");
+        return;
+      }
+      
+      const num1 = parseFloat(n1);
+      const num2 = parseFloat(n2);
+      
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("Invalid input! Please enter numeric values.");
+        return;
+      }
+      
+      let res;
+      switch (operator) {
+        case '+': res = num1 + num2; break;
+        case '-': res = num1 - num2; break;
+        case '*': res = num1 * num2; break;
+        case '/': 
+          if (num2 === 0) {
+            alert("Error: Division by zero!");
+            return;
+          }
+          res = num1 / num2; 
+          break;
+      }
+      document.getElementById('result').value = res;
+    }
+
+    function calculateSquare() {
+      const n1 = document.getElementById('num1').value;
+      if (n1 === "") {
+        alert("Please enter a number in the first field to find its square!");
+        return;
+      }
+      const num1 = parseFloat(n1);
+      if (isNaN(num1)) {
+        alert("Invalid input! Please enter a number.");
+        return;
+      }
+      document.getElementById('result').value = num1 * num1;
+    }
+
+    function customPromptCalc() {
+      // Use of prompt
+      let input = prompt("Enter a number to calculate its Cube (x³):", "0");
+      
+      if (input === null) return; // User cancelled
+      
+      let num = parseFloat(input);
+      if (isNaN(num)) {
+        // Use of alert for invalid values
+        alert("That's not a valid number!");
+      } else {
+        let cube = num * num * num;
+        alert("The Cube of " + num + " is: " + cube);
+      }
+    }
+
+    function clearCalc() {
+      document.getElementById('num1').value = "";
+      document.getElementById('num2').value = "";
+      document.getElementById('result').value = "";
+    }
+
+    // --- Contact Form Validation ---
+    document.querySelector('.contact form').onsubmit = function(e) {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      
+      if (name.trim().length < 3) {
+        alert("Please enter a valid Full Name (at least 3 characters).");
+        e.preventDefault();
+        return;
+      }
+      
+      if (!/^\d{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        e.preventDefault();
+        return;
+      }
+      
+      alert("Enquiry submitted successfully! We will contact you soon.");
+    };
+  </script>
+</body>
+</html>
